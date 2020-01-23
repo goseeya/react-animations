@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './List.css';
 
 class List extends Component {
@@ -25,9 +24,9 @@ class List extends Component {
 
     render () {
         const listItems = this.state.items.map( (item, index) => (
-            <li 
+            <li
                 key={index}
-                className="ListItem" 
+                className="ListItem"
                 onClick={() => this.removeItemHandler(index)}>{item}</li>
         ) );
 
